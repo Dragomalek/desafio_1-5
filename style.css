@@ -3,30 +3,43 @@
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  align-items: center;
 }
 
 body {
-  background-color: rgba(245, 245, 245, 0.562);
+  background-color: rgb(232, 239, 240);
   width: 100vw;
-  height: 9px;
+  height: 100vh;
 }
 
 #imagen-perfil {
-  border-radius: 10%;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* transform: rotate(16deg); */
 }
 
 h1,
-h2 {
+h2,
+h3 {
   padding: 16px;
-  border: 1px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  margin: 0 2rem;
+  border-radius: 1rem;
 }
 
-#info-personal li {
-  width: 50%;
+#info__personal {
+  padding-top: 1rem;
+}
+
+#info__personal li {
+  margin-left: 42vw;
+  text-align: left;
 }
 
 .datos-personales {
   font-weight: bold;
+  font-size: 18px;
 }
 
 p {
@@ -44,10 +57,12 @@ input {
 }
 
 #enviar {
-  background-color: rgb(149, 252, 47);
+  background-color: rgb(46, 233, 192);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 16px;
 }
-
-textarea {
+#mensaje {
   border-style: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 1rem;
