@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: rgba(245, 245, 245, 0.562);
+  width: 100vw;
+  height: 9px;
+}
+
+#imagen-perfil {
+  border-radius: 10%;
+}
+
+h1,
+h2 {
+  padding: 16px;
+  border: 1px solid black;
+}
+
+#info-personal li {
+  width: 50%;
+}
+
+.datos-personales {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 21rem;
+  height: 2rem;
+  border-style: none;
+  margin-top: 1rem;
+  padding: 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+}
+
+#enviar {
+  background-color: rgb(149, 252, 47);
+}
+
+textarea {
+  border-style: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+}

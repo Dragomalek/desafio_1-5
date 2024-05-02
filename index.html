@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 2</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div>
-      <picture>
-        <a href="#">
+      <picture >
           <img
+            id="imagen-perfil"
             src="https://i.pinimg.com/originals/0e/37/79/0e37795ee8e704dc004dca922474bca6.png"
             width="300px"
             alt="foto calamardo"
@@ -19,58 +20,60 @@
 
       <h1>Informacion personal</h1>
 
-      <ul>
-        <li>Nombre: Guido</li>
-        <li>Apellido: González</li>
-        <li>Email: <a href="#">Dragom4lek@gmail.com</a></li>
+      <ul id="info__personal">
+        <li><span class="datos-personales">Nombre: </span>Guido</li>
+        <li><span class="datos-personales">Apellido: </span>González</li>
+        <li><span class="datos-personales">Email: </span><a href="#">     Dragom4lek@gmail.com</a></li>
       </ul>
+      <br>
 
+      <h3>Sobre mi</h3>
+
+      <br>
       <p>
-        Soy un apasionado por la tecnologia, musico y proximamente programador
-        full stack.
+        Soy un apasionado por la tecnologia y la musica, toco varios instrumentos entre ellos estan la guitarra, piano, bajo, ukelele. y proximamente programador
+        full stack. <br>
+        Actualmente vivo en Lujan provincia de Buenos Aires.
       </p>
-
-      <p>Actualmente vivo en Lujan provincia de Buenos Aires</p>
     </div>
 
     <section>
       <h2>Contacto</h2>
       <form action="#">
-        <label for="Nombre">Nombre </label>
+        <label for="Nombre"></label>
         <input
           type="text"
           name="Nombre"
           id="Nombre"
-          placeholder="Introduzca su nombre"
+          placeholder="Nombre"
         />
         <br />
-        <label for="apellido">Apellido</label>
+        <label for="apellido"></label>
         <input
           type="text"
           name="apellido"
           id="apellido"
-          placeholder="Introduzca su apellido"
+          placeholder="Apellido"
         />
         <br />
-        <label for="email">Email</label>
+        <label for="email"></label>
         <input
           type="email"
           name="email"
           id="email"
-          placeholder="Introduzca su Email"
+          placeholder="Email"
         />
         <br /><br />
 
         <textarea
           name="mensaje"
           id="mensaje"
-          cols="28"
+          cols="40"
           rows="10"
           placeholder="Deje su mensaje aqui..."
-        >
-        </textarea>
+        ></textarea>
         <br /><br />
-        <input type="button" value="Enviar" />
+        <input type="button" value="Enviar" id="enviar"/>
       </form>
     </section>
   </body>
