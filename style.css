@@ -1,13 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  align-items: center;
 }
 
 body {
-  background-color: rgb(240, 232, 236);
+  background-color: rgba(240, 232, 236, 0.651);
   width: 100vw;
   height: 100vh;
 }
@@ -31,7 +30,7 @@ h3 {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
   margin: 0 2rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 
 #info__personal {
@@ -59,7 +58,8 @@ a:hover {
 }
 
 p {
-  margin: 0 1rem 1rem 1rem;
+  margin: 0.5rem 1rem 1.5rem 2rem;
+  font-style: oblique;
 }
 
 #contacto {
@@ -95,4 +95,6 @@ input {
   border-style: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 1rem;
+  padding-top: 0.5rem;
+  width: 21rem;
 }
