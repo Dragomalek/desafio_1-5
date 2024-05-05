@@ -83,11 +83,11 @@ input {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(196, 207, 220);
 }
 
 #enviar:hover {
-  background-color: rgb(116, 233, 87);
+  background-color: rgb(164, 211, 226);
   transition-duration: 0.6s;
 }
 #mensaje {
