@@ -97,11 +97,12 @@ textarea:focus {
   font-size: 16px;
   cursor: pointer;
   background-color: rgb(196, 207, 220);
+  transition-duration: 0.4s;
 }
 
 #enviar:hover {
   background-color: rgb(111, 197, 226);
-  transition-duration: 0.8s;
+  transition-duration: 0.6s;
   width: 21rem;
 }
 #mensaje {
@@ -111,4 +112,51 @@ textarea:focus {
   border-radius: 1rem;
   padding-top: 0.5rem;
   width: 21rem;
+}
+
+.boton-contacto {
+  background-color: aqua;
+}
+
+.boton-discord {
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  /* border: 1px solid black; */
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#discord-icon {
+  border-radius: 50%;
+}
+
+.boton-github {
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: rgba(211, 212, 221, 0.522);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+}
+
+#github-icon {
+  border-radius: 50%;
+}
+
+.icons {
+  transition-duration: 0.4s;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+  transition-duration: 0.2s;
 }
