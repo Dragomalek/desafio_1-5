@@ -39,7 +39,8 @@ header {
   margin-bottom: 2rem;
 }
 
-.contenedor-hamburguesa {
+#hamburguesa,
+#menu-hamburguesa {
   display: none;
 }
 
