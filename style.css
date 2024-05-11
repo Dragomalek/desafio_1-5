@@ -1,14 +1,63 @@
+:root {
+  /* colores */
+  --fondo-bg: #bcbcbc;
+  --titulos: white;
+  --boton_enviar: whitesmoke;
+
+  /* sombreados */
+  --sombreado1: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  --sombreado2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
 }
 
 body {
-  background-color: rgba(211, 212, 221, 0.522);
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fondo-bg);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  /* background-color: #424242; */
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5vw;
+  width: 99vw;
+  margin-bottom: 2rem;
+}
+
+.contenedor-hamburguesa {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.navbar a {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  color: #e8175d;
+  transform: scale(1.1);
 }
 
 #imagen-perfil {
@@ -16,10 +65,11 @@ body {
   height: fit-content;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  margin-top: 3.5vw;
   border: 1px solid black;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: var(--sombreado1);
+
   /* transform: rotate(16deg); */
 }
 
@@ -32,25 +82,35 @@ body {
 h1,
 h2,
 s h3 {
-  padding: 16px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: white;
+  padding: 1rem;
+  box-shadow: var(--sombreado2);
+  background-color: var(--titulos);
   margin: 0 1rem;
   border-radius: 1.5rem;
 }
 
+.caja-personal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #info__personal {
-  padding-top: 1rem;
+  padding: 0.75rem;
+  text-align: left;
 }
 
 #info__personal li {
+  display: flex;
+  align-items: center;
   list-style-type: none;
-  text-align: center;
+  padding: 0.25rem;
 }
 
 .datos-personales {
   font-weight: bold;
   font-size: 18px;
+  padding-right: 0.5rem;
 }
 
 a {
@@ -70,45 +130,51 @@ p {
 
 #contacto {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 input {
+  display: flex;
+  justify-content: center;
   width: 21rem;
-  height: 2rem;
+  height: 2.5rem;
   border-style: none;
   margin-top: 1rem;
-  padding: 3px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  box-shadow: var(--sombreado2);
   border-radius: 1rem;
 }
 
-input:focus,
-textarea:focus {
-  background-color: rgb(246, 241, 235);
-  color: black;
-  border: 1px solid whitesmoke;
-}
-
 #enviar {
+  position: relative;
+  left: 25%;
   margin-bottom: 2rem;
-  width: 13rem;
+  width: 50%;
   height: 3rem;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgb(196, 207, 220);
-  transition-duration: 0.4s;
+  background-color: var(--boton_enviar);
 }
 
 #enviar:hover {
-  background-color: rgb(111, 197, 226);
+  background-color: #e8175d;
   transition-duration: 0.6s;
-  width: 21rem;
+  width: 100%;
+  left: 0%;
 }
 #mensaje {
-  margin-top: 0.5rem;
+  margin: 1rem auto;
+
   border-style: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--sombreado2);
   border-radius: 1rem;
   padding-top: 0.5rem;
   width: 21rem;
@@ -141,8 +207,6 @@ textarea:focus {
   height: 3.5rem;
   width: 3.5rem;
   border-radius: 50%;
-  background-color: rgba(211, 212, 221, 0.522);
-
   position: fixed;
   right: 1rem;
   bottom: 5rem;
@@ -152,11 +216,56 @@ textarea:focus {
   border-radius: 50%;
 }
 
-.icons {
-  transition-duration: 0.4s;
-}
-
 .icons:hover {
   transform: scale(1.2);
   transition-duration: 0.2s;
+}
+
+@media (max-width: 678px) {
+  .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e8175d;
+    left: 100vh;
+    top: 0;
+    background-color: #e8175d;
+    padding-top: 40vh;
+  }
+  .navbar a {
+    position: relative;
+    left: 2.5rem;
+    display: flex;
+    height: 3.5rem;
+    width: 90vw;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+
+  .boton-github {
+    display: none;
+  }
+  .boton-discord {
+    display: none;
+  }
+  #hamburguesa {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 600;
+    top: 1vh;
+    left: 90vw;
+    z-index: 100;
+  }
+  #menu-hamburguesa {
+    display: none;
+  }
+
+  #menu-hamburguesa:checked + .navbar {
+    left: -2vh;
+  }
 }
