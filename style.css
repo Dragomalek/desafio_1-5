@@ -17,7 +17,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: none;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
 }
 
 body {
@@ -228,7 +228,7 @@ input {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 103vw;
     height: 100vh;
     background-color: #e8175d;
     left: 100vh;
@@ -238,7 +238,7 @@ input {
   }
   .navbar a {
     position: relative;
-    left: 2.5rem;
+    left: 2rem;
     display: flex;
     height: 3.5rem;
     width: 90vw;
@@ -269,5 +269,9 @@ input {
 
   #menu-hamburguesa:checked + .navbar {
     left: -2vh;
+    transition-duration: 0.6s;
+  }
+  #enviar {
+    display: none;
   }
 }
